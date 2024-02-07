@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_emoji/flutter_emoji.dart';
@@ -74,8 +73,8 @@ class _MainDesktopState extends State<MainDesktop> {
                   shaderCallback: (Rect bounds) {
                     return const LinearGradient(
                       colors: [
-                        CustomColor.orangeAccent,
-                        CustomColor.whitePrimary
+                        CustomColor.whitePrimary,
+                        Color.fromARGB(255, 35, 131, 210),
                       ],
                     ).createShader(bounds);
                   },
@@ -131,24 +130,21 @@ class _MainDesktopState extends State<MainDesktop> {
               ),
             ],
           ),
-          ZoomIn(
-            delay: const Duration(milliseconds: 200),
-            child: CircleAvatar(
-              backgroundColor: Colors.black,
-              radius: screenWidth / 6,
-              backgroundImage: const AssetImage('assets/images/myphoto.png'),
-              child: Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.2),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: const Offset(0, 3),
-                    ),
-                  ],
-                ),
+          CircleAvatar(
+            backgroundColor: Colors.black,
+            radius: screenWidth / 6,
+            backgroundImage: const AssetImage('assets/images/myphoto.png'),
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: const Offset(0, 3),
+                  ),
+                ],
               ),
             ),
           ),

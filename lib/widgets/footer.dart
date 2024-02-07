@@ -12,7 +12,7 @@ class Footer extends StatelessWidget {
       width: double.maxFinite,
       alignment: Alignment.center,
       child: Text(
-        'Made by Prathmesh with Flutter 3.13',
+        'Made by Prathmesh with Flutter 3.16',
         style: GoogleFonts.ubuntu(
           color: CustomColor.whiteSecondary,
           fontWeight: FontWeight.w400,

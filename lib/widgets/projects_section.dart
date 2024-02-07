@@ -19,14 +19,13 @@ class ProjectSection extends StatelessWidget {
           //title Project Highlights
           SizedBox(
             width: 300,
+            height: 80,
             child: ShaderMask(
               shaderCallback: (Rect bounds) {
                 return const LinearGradient(
                   colors: [
+                    CustomColor.orangeAccent,
                     CustomColor.whitePrimary,
-                    CustomColor.yellowPrimary,
-                    CustomColor.blueAccent,
-                    CustomColor.greenAccent,
                     CustomColor.orangeAccent,
                   ],
                 ).createShader(bounds);

@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,24 +40,21 @@ class _MainMobileState extends State<MainMobile> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ZoomIn(
-            delay: const Duration(milliseconds: 200),
-            child: CircleAvatar(
-              backgroundColor: Colors.black,
-              radius: screenWidth / 3.5,
-              backgroundImage: const AssetImage('assets/images/myphoto.png'),
-              child: Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
-                      spreadRadius: 6,
-                      blurRadius: 10,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
-                ),
+          CircleAvatar(
+            backgroundColor: Colors.black,
+            radius: screenWidth / 3.5,
+            backgroundImage: const AssetImage('assets/images/myphoto.png'),
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    spreadRadius: 6,
+                    blurRadius: 10,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
               ),
             ),
           ),
@@ -92,7 +88,10 @@ class _MainMobileState extends State<MainMobile> {
             child: ShaderMask(
               shaderCallback: (Rect bounds) {
                 return const LinearGradient(
-                  colors: [CustomColor.orangeAccent, CustomColor.whitePrimary],
+                  colors: [
+                    CustomColor.whitePrimary,
+                    Color.fromARGB(255, 35, 131, 210),
+                  ],
                 ).createShader(bounds);
               },
               child: Text(

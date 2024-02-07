@@ -87,8 +87,6 @@ class _HomePageState extends State<HomePage> {
                               colors: [
                                 CustomColor.orangeAccent,
                                 CustomColor.whitePrimary,
-                                CustomColor.blueAccent,
-                                CustomColor.greenAccent,
                                 CustomColor.orangeAccent,
                               ],
                             ).createShader(bounds);
@@ -147,7 +145,7 @@ class _HomePageState extends State<HomePage> {
     final key = navBarKeys[navIndex];
     Scrollable.ensureVisible(
       key.currentContext!,
-      duration: const Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 400),
       curve: Curves.easeInOut,
     );
   }

@@ -24,7 +24,7 @@ List<ProjectUtils> myprojects = [
     images: "assets/projects/simpliAdmission.jpeg",
     title: "SimpliAdmission",
     subtitle:
-        " Simplify engineering college admissions stress-free. Explore colleges, details, and contacts for better acceptance chances.",
+        "Simplify college admissions using colleges details, and contacts for better acceptance chances.",
     gitlink: "https://github.com/prathmesh0/SimpliAdmission",
   ),
   ProjectUtils(
@@ -37,8 +37,7 @@ List<ProjectUtils> myprojects = [
   ProjectUtils(
     images: "assets/projects/calculator.jpeg",
     title: "Calculator",
-    subtitle:
-        "Used in daily life to perform basic mathematical calculations.",
+    subtitle: "Used in daily life to perform basic mathematical calculations.",
     gitlink: "https://github.com/prathmesh0/calculator",
   ),
   ProjectUtils(
@@ -53,14 +52,14 @@ List<ProjectUtils> myprojects = [
     images: "assets/projects/maggie.png",
     title: "Maggie - Virtual Assistant",
     subtitle:
-        "A Python-driven virtual assistant that responds to voice commands, executing tasks with efficiency and precision.",
+        "A Python-driven virtual assistant that responds to voice commands, executing tasks with efficiency.",
     gitlink: "https://github.com/prathmesh0/VIRTUAL-ASSISTANT-Maggie",
   ),
   ProjectUtils(
     images: "assets/projects/meal.jpeg",
     title: "Meal App",
     subtitle:
-        "Offers a range of dishes with step-by-step guidance, featuring convenient filters and categories for quick access.",
+        "Offers a range of dishes with step-by-step guidance, featuring convenient filters and categories.",
     gitlink: "https://github.com/prathmesh0/Meal_App",
   ),
 ];

@@ -31,8 +31,8 @@ class ProjectCardWidget extends StatelessWidget {
 
     return Container(
       clipBehavior: Clip.antiAlias,
-      height: 290,
-      width: 260,
+      height: 300,
+      width: 270,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: CustomColor.bgLight2,
